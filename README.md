@@ -1,5 +1,3 @@
-<img src="https://user-images.githubusercontent.com/87569188/215333808-961707f9-acea-442d-b815-d70336169a55.png" align="right" width="200">
-
 # Gyaan Setu
 
 Gyaan Setu is a platform that helps students, teachers, researchers, and developers easily take and organize notes on any topic of interest. It uses an algorithm to curate the most relevant, concise, and organized content for the user, allowing them to quickly review and delete any unnecessary information. Gyaan Setu offers an efficient and intuitive way to learn, saving users time and helping them focus on what really matters – advancing their knowledge.
