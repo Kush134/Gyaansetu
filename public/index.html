@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gyaan Setu</title>
+  <link rel="icon" type="image/x-icon" href="../Favicon/favicon.ico">
+  <script src="https://use.fontawesome.com/5d5a7b196b.js"></script>
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css\style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css\devtools.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<!-- <body style="background-color: #0F1930;"> -->
+
+<body style="background-color: #162238;">
+
+
+  <!-- Start header -->
+
+  <nav class="navbar navbar-expand-xl navbar-dark" style="background-color: #162238; top: -23px;">
+    <div class="container-fluid">
+      <div class="gyansetu">
+        <a class="navbar-brand" href="index.html"><img class="Gyaanlogo" src="Images\gyaan-setu-2-1.png"
+            alt="image"></a>
+        <a class="headgyaaaan" href="index.html">
+          <span class="headgyaan">GYAAN&nbsp;</span>
+          <span class="headsetu">SETU</span>
+        </a>
+        <!-- <a class="headsetu" href="index.html">SETU</a> -->
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" data-bs-toggle="collapse"
+        data-bs-target=".navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link"
+              style="color:#fff; font-size: 20px; text-align: center; cursor: pointer;"
+              onclick="window.location.href='Community/community.html'">Communities</a></li>
+          <li class="nav-item"><a class="nav-link" href="" onclick="clickAlert()"
+              style="color:#fff; font-size: 20px; text-align: center;">Contribute</a></li>
+          <li class="nav-item"><a class="nav-link" href="" onclick="clickAlert()"
+              style="color:#fff; font-size: 20px; text-align: center;">How it works?</a></li>
+          <li class="nav-item" id="profile-pic" style="display: none;"><a class="nav-link"
+              href="Dashboard/dashboard.html" style="color:#fff; font-size: 20px; text-align: center;"><img
+                class="profilephoto"></a></li>
+          <li class="nav-item" id="li-login" style="display: none; text-align: center;"><a class="nav-link login-sign"
+              id="signup-button" style="color:#000; font-size: 17px; cursor: pointer; text-align: center;">Login
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- TODO: Make this div appear at the center of the screen after we click on login/sign up -->
+  <link rel="stylesheet" href="css/registration.css">
+  <!--  -->
+
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4 col-xl-2 col-login">
+      <div class="card bg-dark text-white innerrec" style="border-radius: 1rem;" id="sign-up-rect"
+        style="display: none;">
+        <span class="close-log" id="close-form-button">&times;</span>
+        <div class="card-body p-5 text-center">
+          <div class="mb-md-5 mt-md-4 pb-5">
+            <div><img class="logo" alt="logo" src="Images\gyaan-setu-2-1.png"></div>
+            <h2 class="fw-bold mb-2 text-uppercase create-account">Account</h2>
+            <!-- <p class="text-white-50 mb-5">Please enter your login and password!</p> -->
+            <div class="inforec">
+              <div class="info">
+                <form id="signup-form">
+                  <input type="text" class="username" id="username" placeholder="Username">
+                  <input type="text" class="school" id="school" placeholder="University/School">
+                  <input type="text" class="course" id="course" placeholder="Course">
+                  <input type="text" class="department" id="department" placeholder="Department">
+                  <input type="email" class="emailid" id="email" placeholder="Email" required>
+                  <input type="password" class="pass" id="password" placeholder="Password" required>
+                  <button type="submit" class="sign-up">Sign Up</button>
+                </form>
+                <p class="Already-account">Already have an account? <a class="sign-in" id="signinredirect" href="">Sign
+                    In</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4 col-xl-2 col-login">
+      <div class="card bg-dark text-white innerrec" style="border-radius: 1rem; position: fixed;" id="sign-in-rect"
+        style="display: none;">
+        <span class="close-log" id="close-form-button">&times;</span>
+        <div class="card-body p-5 text-center">
+          <div class="mb-md-5 mt-md-4 pb-5">
+            <div><img class="logo" alt="logo" src="Images\gyaan-setu-2-1.png"></div>
+            <h2 class="fw-bold mb-2 text-uppercase create-account">Account</h2>
+            <!-- <p class="text-white-50 mb-5">Please enter your login and password!</p> -->
+            <div class="inforec">
+              <div class="info">
+                <form id="signin-form">
+                  <input type="email" class="emailid" id="email-si" placeholder="Email" required>
+                  <input type="password" class="pass" id="password-si" placeholder="Password" required>
+                  <button type="submit" class="sign-up">Sign In</button>
+                </form>
+                <div>
+                  <p class="Already-account">Don't have an account? <a class="sign-in" id="signupredirect" href="">Sign
+                      Up</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card bg-dark text-white save-note"
+    style="border: 1px solid #F5A425; border-radius: 1rem; position: fixed; display: none;" id="save-in-rect">
+    <span class="close" id="close-save-form-button">&times;</span>
+    <div class="card-body p-5 text-center">
+      <div class="mb-md-5 mt-md-4 pb-5">
+        <h2 class="fw-bold mb-2 text-uppercase save-head">Save Note</h2>
+        <div class="save-inforec">
+          <div class="save-info">
+            <form id="savenote-form" onsubmit="return false;">
+              <input type="text" class="save-title" id="save-title" placeholder="Note Title" required>
+              <input type="text" class="save-title" id="save-subject" placeholder="Subject" required>
+              <button type="submit" class="sign-up" id="save-button">Save</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="row d-flex justify-content-center align-items-center h-100"> -->
+  <!-- <div class="col-xs-12 col-sm-9 col-md-7 col-lg-5 col-xl-3 col-login"> -->
+
+  <!-- </div> -->
+  <!-- </div> -->
+
+  <!-- The Firebase JavaScript library -->
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
+  <script src="firebase.js"></script>
+  <script src="SignUp/llogin.js"></script>
+
+
+
+
+
+  <!-- End header -->
+
+
+  <div class="upperPart"><img class="bgimage" alt="background"
+      src="Images\getty_180843224_20001260200092802_126854.jpg">
+
+    <div class="rectangle-24"> </div>
+
+    <!-- <div class="search-and-learn col-lg-3">SEARCH AND LEARN</div> -->
+    <!-- <img class="iconsax-linearsearchnormalt" src="iconsax-linear-searchnormall.svg" alt="Iconsax/Linear/searchnormal1" /> -->
+
+    <div class="your-topics">
+      <form id="search-form">
+        <input type="search" class="searchbar" placeholder=" Your Topics..." name="search" id="search-input">
+      </form>
+    </div>
+
+    <!-- <p class="seperate-your-topics-using">Seperate your topics using ','</p> -->
+
+    <!-- <label class="rectangle-31">
+      <input type="file" style="margin-top: 10px;" onclick="clickAlert()" style="font-size: 50px;">
+      <span class="upload-the-syllaus"
+        style="color: #000; font-size: 110%; position: relative; text-align: center;">Upload your syllabus</span>
+    </label> -->
+
+
+    <div class="your-learning-partner"><span class="your">TAKE NOTES BY</span><span class="learning">
+        DELETING</span><span class="your"> THEM</span></div>
+
+
+  </div>
+  <!-- first part end -->
+
+
+  <!-- <p style="color: white; margin-left: 7%; margin-right: 3%; margin-top: -190px; font-size: 20px; color: bisque;">Some
+    results may not be up to the mark for now, as we are still working on training the model</p> -->
+
+
+  <div class="saveNotesDiv">
+    <button type="button" class="savebutt" id="save-prompt-button">Save</button>
+  </div>
+
+
+
+  <!-- TODO: Remove this script -->
+
+  <script>
+    function clickAlert() {
+      alert("Still working on integrating it with our database!");
+    }
+  </script>
+  <!-- START HERE -->
+  <style>
+    /* Add some styles for the tree view */
+    span {
+      /* Set the color of the text to white */
+      color: white;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      display: block;
+      position: relative;
+      margin: 0;
+      padding: 0;
+    }
+
+    i {
+      /* Set the color of the buttons to white */
+      color: grey;
+    }
+
+    #tree-view {
+      color: azure;
+
+    }
+  </style>
+  <div class="rectnotes">
+    <div id="Summary-Preview" style="color: azure;"></div>
+    <div id="tree-view"></div> <!-- EDIT THIS DIV -->
+  </div>
+
+  <!-- END HERE -->
+  <!-- Include the tree view function in a script tag -->
+  <!-- Contains json to tree render algorithm -->
+  <script src="frontendIntegration.js"></script>
+  <script src="GyaanSetuAlgo.js"></script>
+  <script src="savefunction.js"></script>
+  <script src="ViewNotes/viewNote.js"></script>
+
+  <!-- Takes input from query, and runs the render algorithm on the output -->
+</body>
+
+</html>

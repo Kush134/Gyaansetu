@@ -1,0 +1,135 @@
+.card {
+margin-left: 2%;
+/* margin-right: 2%; */
+}
+
+.card-body{
+border: 2px ; 
+border-style: solid;
+border-color: white;
+border-radius: 20px;
+}
+
+.infophoto {
+width: 90px;
+height: 90px;
+border-radius:50%;
+text-align: center;
+margin-top: 10px;
+}
+
+.username {
+margin-top:7px;
+height: 40px;
+background-color:  #283348;
+color: aliceblue;
+padding-top: 6px;
+/* margin-left: 63px; */
+/* width: 170px; */
+}
+
+.card-title-task {
+color: azure;
+font-size: 18px;
+text-align: left;
+font-weight: lighter;
+}
+
+.mycheck {
+color: aliceblue;
+border-bottom: 2px groove gray;
+}
+
+.list-unstyled-task {
+list-style: none;
+text-align: left;
+margin-top: 25px;
+
+}
+
+.task-input {
+margin-bottom: 10px;
+background-color: #162238;
+border: none;
+}
+
+.card-fluid {
+margin-top: 20px;
+margin-right: 10%;
+margin-left: 10%;
+}
+
+.saved-notes {
+color: #F5A425;
+font-size: 30px;
+/* font-size: 2vw; */
+font-weight: bold;
+margin-bottom: 30px;
+text-align: left;
+margin-left: 28%;
+/* margin-top: 15px; */
+}
+
+.card-body-notes-fluid {
+background-color: black;
+border-radius: 10px;
+/* margin: 20px; */
+height: 200px;
+/* margin-top: 28%; */
+}
+
+.card-title-fluid {
+color: white;
+background-color: #4F4D4D;
+font-size: 20px;
+padding: 10px;
+}
+
+.card-body-overview{
+border: 2px ; 
+border-style: solid;
+border-color: white;
+border-radius: 20px;
+padding: 10px;
+height: 250px;
+}
+
+.card-overview {
+margin-left: 2%;
+margin-right: 2%;
+}
+
+.over {
+font-size: 17px;
+color: white;
+font-weight: lighter;
+border-bottom: 2px groove gray;
+/* border-style: initial; */
+}
+
+.container-fluid {
+padding-left: -23px;
+}
+
+.row {
+width: 100%;
+}
+
+.ReadNotes {
+color: grey;
+font-size: 0.3vw;
+/* width: 20%; */
+/* height: ; */
+height: 100px;
+}
+
+/* .card-fluid {
+margin-top: 20px;
+} */
+
+.taskOperate {
+background-color: #F5A425;
+color: black;
+border: 1px solid black;
+border-radius: 5px;
+}

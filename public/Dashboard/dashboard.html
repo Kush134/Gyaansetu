@@ -1,0 +1,153 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="icon" type="image/x-icon" href="../Favicon/favicon.ico">
+  <link rel="stylesheet" href="..\css\style.css">
+  <link rel="stylesheet" href="..\css\dashboard.css">
+  <!-- <script type="text/javascript" src="tasks.js"></script> -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/df138378ec.js" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
+  <script src="../firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color: #0F1930;">
+
+
+  <!-- Start header -->
+  <nav class="navbar navbar-expand-xl navbar-dark" style="background-color: #162238; top: -23px;">
+    <div class="container-fluid">
+      <div class="gyansetu">
+        <a class="navbar-brand" href="..\index.html"><img class="Gyaanlogo" src="..\Images\gyaan-setu-2-1.png"
+            alt="image"></a>
+        <a class="headgyaaaan" href="..\index.html">
+          <span class="headgyaan">GYAAN&nbsp;</span>
+          <span class="headsetu">SETU</span>
+        </a>
+        <!-- <a class="headsetu" href="index.html">SETU</a> -->
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" data-bs-toggle="collapse"
+        data-bs-target=".navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="" onclick="window.location.href='../Community/community.html'"
+              style="color:#fff; font-size: 20px; text-align: center;">Communities</a></li>
+          <li class="nav-item"><a class="nav-link" href="" onclick="clickAlert()"
+              style="color:#fff; font-size: 20px; text-align: center;">Contribute</a></li>
+          <li class="nav-item"><a class="nav-link" href="" onclick="clickAlert()"
+              style="color:#fff; font-size: 20px; text-align: center;">How it works?</a></li>
+          <li class="nav-item" id="profile-pic"><a class="nav-link" href="Dashboard/dashboard.html"
+              style="color:#fff; font-size: 20px; text-align: center;"><img alt="profile" class="profilephoto"
+                id="profilephoto"></a>
+          </li>
+          <li class="nav-item" id="li-login" style="display: none; text-align: center;"><a class="nav-link login-sign"
+              id="signup-button"
+              style="color:#000; font-size: 17px; cursor: pointer; text-align: center; font-weight: bolder;">Login /
+              Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="saved-notes">Saved Notes</div>
+  <div class="row row-cols-1 row-cols-md-4 mb-3 text-center">
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm" style="background-color: #162238;">
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title"><img alt="information" class="infophoto"></small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="username" id="username"></li>
+            <li class="username" id="course"></li>
+            <li class="username" id="Department"></li>
+            <li class="username" id="school"></li>
+            <li class="username" style="background-color: #F5A425; border-radius: 10px; color: #0F1930; cursor: pointer;"
+              id="log-out-btn">Log Out</li>
+          </ul>
+          <!-- <button type="button" class="w-100 btn btn-lg btn-dark">Get started</button> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="profile.js"></script>
+
+
+    <!-- <div class="col">
+      <div class="card-fluid mb-4 rounded-3 shadow-sm">
+        <div class="card-body-notes-fluid" id="button-view" style="cursor: pointer;">
+          <h1 class="card-title-fluid pricing-card-title">Fluid</small></h1>
+          <div class="ReadNotes" id="ReadNotes"></div>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="name" id="username">Acetaminophen</li>
+            <li class="name" id="course">B-Tech</li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+  <!-- <div class="saved-notes">Saved Notes
+<div class="savedbox1">
+    <div class="head1">Fluid Properties</div>
+    <div class="fade1">Fluid Properties</div>
+</div> -->
+
+  <script src="savednotes.js"></script>
+
+
+
+  <!-- <div class="taskbox">
+    <div class="upcoming-task">Upcoming Tasks</div>
+    <div class="date">Date</div>
+</div> -->
+  <div class="row row-cols-1 row-cols-md-4 mb-3 text-center">
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm" style="background-color: #162238;">
+        <div class="card-body">
+          <h1 class="card-title-task pricing-card-title">Upcoming Tasks</small></h1>
+          <button type="button" id="add" class="taskOperate">Add Task</button>
+          <button type="button" id="remove" class="taskOperate">Remove Task</button>
+          <ul class="list-unstyled-task mt-3 mb-4">
+            <li><input type="text" name="" id="input" class="task-input" placeholder="Create a task"></li>
+            <li class="mycheck"><input type="checkbox" id="check"><label>Go to Gym</label></li>
+            <li class="mycheck"><input type="checkbox" id="check"><label>Read Articles on IncludeHelp</label></li>
+            <li class="mycheck"><input type="checkbox" id="check"><label>Learn JavaScript</label></li>
+          </ul>
+          <!-- <button type="button" class="w-100 btn btn-lg btn-dark">Get started</button> -->
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card-overview mb-4 rounded-3 shadow-sm" style="background-color: #162238;">
+        <div class="card-body-overview">
+          <h1 class="card-title-task pricing-card-title">Overview</small></h1>
+          <ul class="list-unstyled-task mt-3 mb-4">
+            <li class="over">Go to Gym</label></li>
+            <li class="over">Read Articles on IncludeHelp</label></li>
+            <li class="over">Learn JavaScript</label></li>
+          </ul>
+          <!-- <button type="button" class="w-100 btn btn-lg btn-dark">Get started</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+{
+    "Phase-shift keying": {
+        "Contents": {},
+        "Introduction[edit]": {},
+        "Binary phase-shift keying (BPSK)[edit]": {
+            "Implementation[edit]": {},
+            "Bit error rate[edit]": {}
+        },
+        "Quadrature phase-shift keying (QPSK)[edit]": {
+            "Implementation[edit]": {},
+            "Probability of error[edit]": {},
+            "Variants[edit]": {
+                "Offset QPSK (OQPSK)[edit]": {},
+                "SOQPSK[edit]": {},
+                "\u03c0/4-QPSK[edit]": {},
+                "DPQPSK[edit]": {}
+            }
+        },
+        "Higher-order PSK[edit]": {
+            "Bit error rate[edit]": {},
+            "Spectral efficiency[edit]": {}
+        },
+        "Differential phase-shift keying (DPSK)[edit]": {
+            "Differential encoding[edit]": {},
+            "Demodulation[edit]": {},
+            "Example: Differentially encoded BPSK[edit]": {},
+            "Definitions[edit]": {}
+        },
+        "Applications[edit]": {},
+        "Mutual information with additive white Gaussian noise[edit]": {},
+        "See also[edit]": {},
+        "Notes[edit]": {},
+        "References[edit]": {},
+        "Navigation menu": {
+            "\nPersonal tools\n": {},
+            "\nNamespaces\n": {},
+            "\nViews\n": {},
+            "\nNavigation\n": {},
+            "\nContribute\n": {},
+            "\nTools\n": {},
+            "\nPrint/export\n": {},
+            "\nIn other projects\n": {},
+            "\nLanguages\n": {}
+        }
+    }
+}

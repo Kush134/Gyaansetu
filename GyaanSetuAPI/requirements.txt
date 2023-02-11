@@ -1,0 +1,11 @@
+flask
+flask-cors==3.0.10
+redis
+requests
+beautifulsoup4==4.10.0
+azure-ai-textanalytics==5.3.0b1
+azure-cognitiveservices-search-websearch==2.0.0
+azure-core==1.26.1
+lxml
+wikipedia
+textstat

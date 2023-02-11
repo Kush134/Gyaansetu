@@ -1,0 +1,139 @@
+.row {
+width: 100%;
+}
+
+.innerrec {
+background-color: #162238;
+text-align: center;
+border: 1px solid #F5A425;
+border-radius: 10px;
+top: 50%;
+/* margin-top: 200px; */
+height: 570px;
+position: fixed;
+max-width: 330px;
+left: 50%; /* Centers the div horizontally */
+transform: translate(-50%, -50%);
+/* width: 350px; */
+/* position: absolute; */
+z-index: 1;
+}
+
+
+.logo {
+border-radius: 50%;
+width: 70px;
+height: 70px;
+margin-top: -60px;
+margin-bottom: 20px;
+}
+
+.create-account {
+color: white;
+font-size: 30px;
+margin-top: -10px;
+}
+
+.inforec {
+/* width: 80%; */
+/* margin-left: 3%; */
+/* margin-left: 28px; */
+margin-top: 20px;
+border-radius: 10px;
+/* margin-bottom: 10%; */
+/* margin-bottom: 70px; */
+padding-bottom: 20px;
+text-align: center;
+}
+
+.username {
+text-align: center;
+margin-top: 8px;
+height: 30px;
+width: 200px;
+background-color: black;
+color: white;
+border: none;
+}
+
+.school {
+text-align: center;
+margin-top: 8px;
+height: 30px;
+width: 200px;
+background-color: black;
+color: white;
+border: none;
+}
+
+.course {
+text-align: center;
+margin-top: 8px;
+height: 30px;
+width: 200px;
+background-color: black;
+color: white;
+border: none;
+}
+
+.department {
+text-align: center;
+margin-top: 8px;
+height: 30px;
+width: 200px;
+background-color: black;
+color: white;
+border: none;
+}
+
+.sign-up {
+background-color:#F5A425;
+padding: 5px 20px;
+text-decoration: none;
+font-size: 22px;
+color: black;
+margin-top: 20px;
+border-radius: 10px;
+}
+
+.emailid {
+text-align: center;
+margin-top: 8px;
+height: 30px;
+width: 200px;
+background-color: black;
+color: white;
+border: none;
+}
+
+.pass {
+text-align: center;
+margin-top: 8px;
+height: 30px;
+width: 200px;
+background-color: black;
+color: white;
+border: none;
+/* margin-right: 20px; */
+}
+
+.col-login {
+position: absolute;
+}
+
+.Already-account{
+color: #8c7e7e;
+margin-top: 10px;
+font-size: 12px;
+}
+
+.sign-in{
+/* background-color: #F5A425; */
+background-color: #0000;
+color: #F5A425;
+border-radius: 10px;
+/* border-color: azure; */
+margin-top: -30px;
+font-weight: 400;
+padding: 2px 7px;
+}
